@@ -159,7 +159,7 @@ ul {
 .code .animated {
   white-space: nowrap;
   border-right: 3px solid var(--cultured);
-  width: 17.2ch;
+  width: 17.15ch;
   animation: typing 2s steps(17), blink 0.5s infinite step-end alternate;
   overflow: hidden;
 }

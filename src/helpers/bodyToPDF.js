@@ -17,7 +17,7 @@ export default () => {
     .map((project, i) => {
       const idx = i + 1;
 
-      return idx % 4 === 0 ? `.project:nth-child(${idx})` : null;
+      return idx % 3 === 0 ? `#projects-list .project:nth-child(${idx})` : null;
     })
     .filter((el) => el !== null);
 
@@ -27,7 +27,7 @@ export default () => {
     image: { type: "jpeg", quality: 0.95 },
     useCORS: true,
     pagebreak: {
-      mode: "avoid-all",
+      after: ["#projects .container"],
     },
     html2canvas: {
       scale: 3,
