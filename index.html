@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christian Osorio</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h2>Christian Osorio</h2>
+      <div class="code">
+        <h1 class="animated">Desarrollador Web</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="container" id="about-me">
+        <div class="about">
+          <h3>Sobre mi</h3>
+        </div>
+        <div class="contact">
+          <ul id="contacts-list"></ul>
+        </div>
+      </div>
+
+      <div class="container column" id="exp-and-tech">
+        <div class="technology">
+          <h3>Tecnologías</h3>
+          <div id="technologies-list"></div>
+        </div>
+
+        <hr class="line" />
+
+        <div class="experience">
+          <h3>Experiencia</h3>
+        </div>
+      </div>
+
+      <div class="container column" id="projects">
+        <div class="container">
+          <h3>Proyectos</h3>
+
+          <div class="switch" id="switch-proyects" data-tp="all">
+            <label for="enterprise">Empresas</label>
+            <div class="options">
+              <input
+                type="radio"
+                name="project"
+                value="enterprise"
+                id="enterprise"
+              />
+              <div class="circle"></div>
+              <input
+                type="radio"
+                name="project"
+                value="personal"
+                id="personal"
+              />
+            </div>
+            <label for="personal">Personales</label>
+          </div>
+        </div>
+
+        <div id="projects-list"></div>
+      </div>
+
+      <button id="button-pdf">Descargar en PDF</button>
+    </main>
+
+    <footer class="footer">
+      <span id="year"></span> | Hecho por Christian A.K.A Door
+    </footer>
+
+    <!-- TEMPLATES -->
+    <template id="project-template">
+      <div class="project">
+        <div class="image">
+          <img
+            alt="Logo del proyecto"
+            src="https://placeimg.com/200/200/tech"
+          />
+        </div>
+        <h3 class="name">
+          <a href="#" target="_blank" rel="noopener">Nombre del Proyectos</a>
+        </h3>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velit,
+          totam sunt omnis temporibus saepe dolores
+        </p>
+        <p class="team">Equipo: <span>no</span></p>
+
+        <div class="tags"></div>
+      </div>
+    </template>
+
+    <template id="item-contact-template">
+      <li class="item">
+        <a href="#social-media" target="_blank" rel="noopener">
+          <span class="icon"></span>
+          <div class="contact-info">
+            <p>Nombre del medio</p>
+            <p>Contacto</p>
+          </div>
+        </a>
+      </li>
+    </template>
+
+    <template id="tech-icon-template">
+      <div class="t-icon">
+        <img src="https://placeimg.com/40/40/tech" alt="HTML" />
+      </div>
+    </template>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

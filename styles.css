@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Roboto+Mono:wght@300;400&display=swap");
+
+:root {
+  /* @COLORS */
+
+  --black: #040303;
+  --gunmetal: #222831;
+  --onyx: #393e46;
+  --yellow: #ffd369;
+  --cultured: #eeeeee;
+  --ghost: #fbfbff;
+
+  /* https://coolors.co/040303-222831-393e46-ffd369-eeeeee-fbfbff */
+
+  --github: #161b22;
+  --js: #f7d11e;
+  --php: #8993be;
+  --node: #88c049;
+  --react: #43c6e6;
+  --vue: #40b782;
+  --pdf: #bf211e;
+
+  /* @FONTS */
+  --ff: "Poppins", sans-serif;
+  --ffc: "Roboto Mono", monospace;
+
+  --fs: 62.5%;
+
+  --light: 300;
+  --normal: 400;
+  --medium: 600;
+  --bold: 700;
+  --bolder: 900;
+
+  /* @RADIUS */
+  --soft-radius: 0.4rem;
+  --normal-radius: 0.8rem;
+  --hard-radius: 1rem;
+}
+
+/* NORMALIZE */
+
+html {
+  box-sizing: border-box;
+  font-family: var(--ff);
+  font-size: var(--fs);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--gunmetal);
+  color: var(--cultured);
+  margin: 0;
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+b {
+  font-weight: var(--medium);
+}
+
+button {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+h1 {
+  font-weight: var(--bolder);
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+h2 {
+  font-weight: var(--bolder);
+  font-size: 5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: var(--bold);
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+p {
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: 1.25px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* :SPECIF STYLES */
+
+#button-pdf {
+  position: fixed;
+  right: 2vw;
+  bottom: 2vw;
+  background-color: var(--pdf);
+  border: none;
+  color: var(--ghost);
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: var(--normal-radius);
+  opacity: 0.25;
+  transition: 0.5s opacity ease;
+  cursor: pointer;
+  font-weight: var(--medium);
+}
+
+#button-pdf:hover {
+  opacity: 1;
+}
+
+.code {
+  background-color: var(--onyx);
+  font-family: var(--ffc);
+  padding: 0.5rem 1.5rem;
+  line-height: 1;
+  border-radius: var(--normal-radius);
+  max-width: fit-content;
+}
+
+.code .animated {
+  white-space: nowrap;
+  border-right: 3px solid var(--cultured);
+  width: 17.2ch;
+  animation: typing 2s steps(17), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+.filter {
+  opacity: 0;
+  visibility: 0;
+  transition: opacity 0.5s ease;
+}
+
+.footer {
+  border: 1px solid rgba(255, 211, 105, 0.25);
+  border-width: 1px 0 0 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 4rem;
+  max-width: 1024px;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.hashtag {
+  font-weight: var(--bold);
+  color: var(--yellow);
+}
+
+.header {
+  padding: 2rem 0;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.line {
+  margin: 2.5rem 0;
+  width: 100%;
+  border: none;
+  height: 2px;
+  background-color: var(--onyx);
+}
+
+.switch {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.switch .circle {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--cultured);
+  position: absolute;
+  border-radius: 50%;
+  border: 4px solid var(--onyx);
+  transition: 1s left ease;
+  cursor: pointer;
+  left: 2.25rem;
+}
+
+.switch label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.switch .options {
+  display: flex;
+  align-items: center;
+  background-color: var(--onyx);
+  justify-content: space-between;
+  width: 8rem;
+  height: 3.5rem;
+  border-radius: 4rem;
+  position: relative;
+}
+
+.switch .options input[type="radio"] {
+  display: none;
+}
+
+.switch[data-tp="enterprise"] .options .circle {
+  left: 0;
+}
+
+.switch[data-tp="personal"] .options .circle {
+  left: 4.5rem;
+}
+
+.no-animated {
+  animation: none !important;
+}
+
+/* :CONTAINERS */
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.container:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+.column {
+  flex-direction: column;
+}
+
+/* :ICONS */
+
+.icon {
+  display: flex;
+  align-items: center;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  color: var(--black);
+  font-size: 2.5rem;
+  height: 45px;
+  justify-content: center;
+  min-width: 45px;
+}
+
+.t-icon {
+  animation: moveInUp 1s forwards;
+}
+
+.t-icon img {
+  object-fit: contain;
+}
+
+/* :LISTS */
+
+.item:not(:last-child) {
+  margin-bottom: 3.5rem;
+}
+
+.item a {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.item .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow: hidden;
+}
+
+.item .contact-info p {
+  color: var(--cultured);
+  font-size: 1.8rem;
+  line-height: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.item .contact-info p:last-child {
+  font-weight: var(--medium);
+}
+
+/* :TAGS */
+
+.tags {
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.tag {
+  font-size: 1.4rem;
+  line-height: 1;
+  padding: 0.6rem 1rem;
+  font-weight: var(--bold);
+  border-radius: var(--soft-radius);
+}
+
+.tag.javascript {
+  color: var(--black);
+}
+
+.tag.vue,
+.tag.php,
+.tag.node,
+.tag.react,
+.tag.github {
+  color: var(--ghost);
+}
+
+.tag.github {
+  background-color: var(--github);
+}
+.tag.javascript {
+  background-color: var(--js);
+}
+.tag.node {
+  background-color: var(--node);
+}
+.tag.php {
+  background-color: var(--php);
+}
+.tag.react {
+  background-color: var(--react);
+}
+.tag.vue {
+  background-color: var(--vue);
+}
+
+/* :PROJECTS */
+
+#projects-list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  width: 100%;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  background-color: var(--onyx);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.5rem;
+  width: 100%;
+  border-radius: var(--normal-radius);
+}
+
+.project .team,
+.project .name,
+.project .description {
+  text-align: left;
+  width: 100%;
+  color: var(--cultured);
+}
+
+.project .favicon {
+  border-radius: var(--soft-radius);
+  object-fit: cover;
+  width: 100%;
+}
+
+.project .name {
+  margin: 1rem 0;
+  line-height: 1;
+}
+
+.project .description {
+  font-size: 1.6rem;
+}
+.project .team {
+  line-height: 1;
+  font-weight: bold;
+  margin: 1rem 0 2rem 0;
+}
+.project .image {
+  width: 100%;
+  height: 320px;
+}
+
+.project .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 2;
+}
+
+/* //////////// */
+
+.container#about-me {
+  gap: 2rem;
+}
+
+.container#projects .container {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.container#projects .container h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+#technologies-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 80px));
+}
+
+/* :KEYFRAMES */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes moveInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* :MEDIA */
+
+@media screen and (max-width: 920px) {
+  h1 {
+    font-weight: var(--bolder);
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .code {
+    margin: 0 auto;
+  }
+
+  .container#about-me,
+  .container#projects .container {
+    flex-direction: column;
+  }
+
+  .container#about-me {
+    gap: 3rem;
+  }
+
+  .container#projects .container {
+    gap: 1.5rem;
+  }
+
+  #technologies-list {
+    justify-content: center;
+  }
+
+  #button-pdf {
+    position: static;
+    opacity: 1;
+  }
+}

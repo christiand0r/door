@@ -1,0 +1,133 @@
+{
+  "about-me": "<b>Adepto del código</b> y fanático de la comunidad tech. Soy un joven de 21 años, autárquico y autodidacta, apasionado por la programación. <b>Soy responsable, amable y comunicativo</b>, también me considero creativo, tanto en mi trabajo como en mi vida diaria y mi lenguaje favorito es <b class=\"hashtag\">#Javascript.</b>",
+
+  "contacts": [
+    {
+      "icon": "ri-github-fill",
+      "media": "Github",
+      "contact": "@christiand0r",
+      "url": "https://github.com/christiand0r"
+    },
+    {
+      "icon": "ri-linkedin-fill",
+      "media": "LinkedIn",
+      "contact": "@christiand0r",
+      "url": "https://www.linkedin.com/in/christiandor"
+    },
+    {
+      "icon": "ri-twitter-fill",
+      "media": "Twitter",
+      "contact": "@christiand0r",
+      "url": "https://twitter.com/christiand0r"
+    },
+    {
+      "icon": "ri-github-fill",
+      "media": "Whatsapp",
+      "contact": "58414 3399616",
+      "url": "https://wa.me/584143399616"
+    },
+    {
+      "icon": "ri-mail-fill",
+      "media": "Correo",
+      "contact": "Christiandoor.2001@gmail.com",
+      "url": "mailto:Christiandoor.2001@gmail.com"
+    }
+  ],
+
+  "tecnologies": ["html", "css", "js", "php", "git", "vue", "react", "node"],
+
+  "experience": "Desde el 2019 comencé con el desarrollo web, de ahí en adelante ha sido <b>aprender, crecer y programar</b>, he estado rodeado de gente que han hecho muy ameno mi aprendizaje y me han motivado a seguir avanzando, desde entonces, no he parado en ningun momento para seguir <b>trabajando como desarrollador y seguir aprendiendo.</b>",
+
+  "projects": [
+    {
+      "color": "#fdd221",
+      "description": "Sitio para brindar servicio de traslado y turismo en Cancún, México",
+      "image": "cancun-shuttle-airport.png",
+      "name": "Cancun Shuttle Airpot",
+      "site": "https://cancunshuttle-airport.com/en/",
+      "team": true,
+      "technologies": ["Javascript", "PHP"],
+      "type": "enterprise"
+    },
+    {
+      "color": "#ffffff",
+      "description": "Sitio para brindar servicio de traslado y turismo en Cancún, México",
+      "image": "coco-transfers.png",
+      "name": "Coco Transfer",
+      "site": "https://cocotransfers.com/en/",
+      "team": true,
+      "technologies": ["Javascript", "PHP"],
+      "type": "enterprise"
+    },
+    {
+      "color": "#9a5b8f",
+      "description": "Buscador multiniveles para busqueda de productos mediante la API de Woocommerce",
+      "image": "woocommerce-rest-api.png",
+      "name": "Buscador de Productos Woocommerce",
+      "site": "https://github.com/christiand0r/searcher-woocommerce",
+      "team": false,
+      "technologies": ["Javascript", "Github"],
+      "type": "personal"
+    },
+    {
+      "color": "#000000",
+      "description": "Aplicación con autenticación utilizando AES para consumir datos de la API de Swapi",
+      "image": "stars-wars.png",
+      "name": "Stars Wars App",
+      "site": "https://star-wars-da-door.netlify.app/",
+      "team": false,
+      "technologies": ["Javascript", "React"],
+      "type": "personal"
+    },
+    {
+      "color": "#ffffff",
+      "description": "Aplicación para consultar el clima mediente el país y la ciudad utilizando la API de OpenWeather",
+      "image": "open-weather.jpg",
+      "name": "Consultor de Clima",
+      "site": "https://weather-app-door.netlify.app/",
+      "team": false,
+      "technologies": ["Javascript", "React"],
+      "type": "personal"
+    },
+    {
+      "color": "#c55339",
+      "description": "Aplicación para manejar el presupuesto semanal agregando o eliminando gastos",
+      "image": "presupuesto.jpg",
+      "name": "Presupuesto Semanal",
+      "site": "https://weeklybudget-manager-door.netlify.app/",
+      "team": false,
+      "technologies": ["Javascript", "React"],
+      "type": "personal"
+    },
+    {
+      "color": "#0e0e0e",
+      "description": "Juego de responder preguntas de si o no de forma aleatoria consumiendo la API de yesno.wft",
+      "image": "jonh-travolta.png",
+      "name": "Indecision App",
+      "site": "https://indecision-door.netlify.app/",
+      "team": false,
+      "technologies": ["Javascript", "Vue"],
+      "type": "personal"
+    },
+    {
+      "color": "#f7e018",
+      "description": "SPA utilizando Javascript Vanilla consumiendo cualquier blog de Wordpress como backend",
+      "image": "js-squared.png",
+      "name": "SPA Vanilla",
+      "site": "https://spa-vanilla-door.netlify.app/",
+      "team": false,
+      "technologies": ["Javascript"],
+      "type": "personal"
+    },
+    {
+      "color": "#7f0d0d",
+      "description": "Juego de elección basado en Pokémon",
+      "image": "pokeball.svg",
+      "name": "¿Quién es ese pokémon? - Juego",
+      "site": "https://who-is-that-pokemon-door.netlify.app/",
+      "team": false,
+      "technologies": ["Javascript", "Vue"],
+      "type": "personal"
+    }
+  ]
+}
