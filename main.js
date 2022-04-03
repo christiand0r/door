@@ -24,6 +24,4 @@ document.addEventListener("DOMContentLoaded", async () => {
   TechIcon(data.tecnologies);
 
   filterProjects();
-
-  downloadPDF();
 });
