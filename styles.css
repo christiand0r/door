@@ -19,6 +19,7 @@
   --react: #43c6e6;
   --vue: #40b782;
   --pdf: #bf211e;
+  --polymer: #f50057;
 
   /* @FONTS */
   --ff: "Poppins", sans-serif;
@@ -372,6 +373,9 @@ ul {
 }
 .tag.vue {
   background-color: var(--vue);
+}
+.tag.polymer {
+  background-color: var(--polymer);
 }
 
 /* :PROJECTS */

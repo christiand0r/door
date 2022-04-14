@@ -128,6 +128,16 @@
       "team": false,
       "technologies": ["Javascript", "Vue"],
       "type": "personal"
+    },
+    {
+      "color": "#222831",
+      "description": "Gestor para salvar snippets usando web components",
+      "image": "save-snippets.png",
+      "name": "Save Snippets",
+      "site": "https://savesnippet-door.netlify.app/",
+      "team": false,
+      "technologies": ["Javascript", "Polymer"],
+      "type": "personal"
     }
   ]
 }
